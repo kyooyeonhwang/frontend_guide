@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+</head>
+${require('./_metahead.html')}
+</head>
+<body>
+<div id="page-wrapper" class="lsds-page-wrapper">
+	<header id="lsds-header">
+		<h1 class="lsds-logo"><a href="/demo/uiguide/index.html"><img src="/demo/uiguide/images/demo_ko.svg" alt="하나투어"></a></h1>
+		<p class="lsds-guide-tit"><a href="/demo/uiguide/index.html">퍼블리싱 가이드</a></p>
+	</header>
+	<div id="guide_lnb" class="lsds-lnb">
+		<ul  class="guide_lnb ui-lnb"></ul>
+	</div>
+
+	<main id="container" class="lsds-container">
+		<div class="content">
+			<h2>문서 개요</h2>
+			<p>이 문서는 UI 개발자가 소스 코드 작성 시에 따라야 할 규칙을 기술한다.</p>
+			<ul class="lsds-ulist-group">
+				<li>1장. 개요<br>
+				코딩 컨벤션의 필요성과 코딩 컨벤션의 요소, 용어를 소개한다.
+				<li>2장. 네이밍 규칙<br>
+				id/class, 이미지, 파읷, 폴더의 네이밍 규칙을 설명한다.</li>
+				<li>3장. HTML 코드 작성 규칙<br>
+				HTML 코드의 기본 작성 규칙과 들여쓰기, 빈 줄 사용, DTD 및 인코딩 선언, 주석 표기 규칙을 설명한다.</li>
+				<li>4장. HTML 엘리먼트 작성 규칙<br>
+				HTML 엘리먼트 종류별 작성 규칙을 설명한다.
+				<li>5장 CSS 코드 작성 규칙<br>
+				CSS 코드의 기본 작성 규칙과 인코딩, 선택자, 속성 등의 작성 규칙을 설명한다.</li>
+				<li>6장. 웹 접근성 보장 방법<br>
+				웹 접근성을 보장하도록 마크업하는 방법을 설명한다.</li>
+				<li>부록 A. 코딩 시 참고 사항
+				웹표준 기반의 마크업, 크로스 브라우징 범위, 폴더 생성 방법, PNG 이미지 사용 방법을 설명한다.</li>
+				<li>부록 B. 예약어 목록<br>
+				네이밍 예약어와 대체 텍스트 예약어 목록을 설명한다.</li>
+			</ul>
+			<section class="lsds-code-block">
+				<h3 class="lsds-tit02">Base</h3>
+				<textarea class="lsds-code-content ui-html ui-code-content">
+framework/
+├─ pc/
+│   ├─ assets/
+│   │   ├─ css/
+│   │   │   ├── demo.css
+│   │   │   └── common.css
+│   │   ├─ img/
+│   │   │   ├── bg/
+│   │   │   ├── ico/
+│   │   │   ├── com/
+│   │   │   └── main/
+│   │   └─ js/
+│   │        └── util.js
+│   └── index.html
+│
+└─ mobile/
+	├─ assets/
+	│   ├─ css/
+	│   │   ├── demo.css
+	│   │   └── common.css
+	│   ├─ img/
+	│   │   ├── bg/
+	│   │   ├── ico/
+	│   │   ├── com/
+	│   │   └── main/
+	│   └── js/
+	│        └── util.js
+	└── index.html
+					</textarea>
+			</section>
+		</div>
+	</main>
+</div>
+</body>
+</html>
