@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>PC Web(굿잡) - 하나투어 퍼블리싱 마크업 가이드</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/CSS" href="/hanatour/uiguide/guide.css">
+<script type="text/javascript" src="/hanatour/uiguide/jquery-1.12.4.min.js"></script>
+<script src="/hanatour/uiguide/xmlscript.js" ></script>
+<link rel=stylesheet href="/hanatour/uiguide/codemirror.css">
+<link rel="stylesheet" href="https://codemirror.net/theme/dracula.css">
+<script src=/hanatour/uiguide/js/codemirror.js></script>
+<script src=/hanatour/uiguide/js/xml.js></script>
+<script src=/hanatour/uiguide/js/javascript.js></script>
+<script src=/hanatour/uiguide/js/css.js></script>
+<script src=/hanatour/uiguide/js/htmlmixed.js></script>
+</head>
+<body>
+<div id="page-wrapper" class="lsds-page-wrapper">
+	<header id="lsds-header">
+		<h1 class="lsds-logo"><a href="/hanatour/uiguide/index.html"><img src="/hanatour/uiguide/images/hanatour_ko.svg" alt="하나투어"></a></h1>
+		<p class="lsds-guide-tit"><a href="/hanatour/uiguide/index.html">퍼블리싱 가이드</a></p>
+	</header>
+	<div id="guide_lnb" class="lsds-lnb">
+		<div id="Guide_TopWrap_Menu" class="guide_lnb"></div>
+	</div>
+	<script>sendRequest("/hanatour/uiguide/menu.xml");</script>
+
+	<main id="container" class="lsds-container">
+		<div class="content">
+			<h2>팝업</h2>
+			<p class="lsds-tit02">1) 새창 팝업</p>
+
+			<p class="lsds-tit03">1. 소형</p>
+			<iframe id="preview1" class="iframe_preview"></iframe>
+			<div class="lsds-code-contents">
+				<textarea id="code1" name="code" class="codedemo code-html"><div class="pop_wrap pop_sm pop_new" style="position:relative; left:auto; top:auto; margin:0;">
+	<div class="pop_header" style="position:absolute;">
+		<h1>SMS 인증</h1>
+	</div>
+
+	<div class="pop_container">
+		<div class="pop_content">
+			<dl class="pop_dl_line">
+				<dt>
+					<span class="tit">휴대폰 번호</span>
+				</dt>
+				<dd>
+					<div class="form_line">
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본입력창" class="form_md" /></span>
+						<button type="button" class="btn_tp03 gray02"><span>인증번호 발송</span></button>
+					</div>
+				</dd>
+			</dl>
+			<dl class="pop_dl_line">
+				<dt>
+					<span class="tit">인증번호</span>
+				</dt>
+				<dd>
+					<div class="form_line">
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본입력창" class="form_st" /></span>
+						<span class="txt">남은 시간 <span class="col_red">2 : 59</span></span>
+						<button type="button" class="btn_tp03 gray"><span>인증번호 확인</span></button>
+					</div>
+				</dd>
+			</dl>
+
+			<!-- 마지막 콘텐츠가 선이 없는 경우 class=pop_btm01, 있는경우 class=pop_btm02 -->
+			<div class="btn_wrap pop_btm01">
+				<button type="button" class="btn_tp02 white"><span>닫기</span></button>
+			</div>
+		</div>
+	</div>
+</div></textarea>
+			</div>
+
+
+
+
+			<p class="lsds-tit02">3) 메인전용 공지사항</p>
+
+			<p class="lsds-tit03">1. 기본형</p>
+			<iframe id="preview2" class="iframe_preview"></iframe>
+			<div class="lsds-code-contents">
+				<textarea id="code2" name="code" class="codedemo code-html"><div class="pop_wrap pop_sm sw_type" style="position:relative; left:auto; top:auto; margin:0;">
+	<div class="pop_container">
+		<div class="pop_content">
+			<div class="sw_wrap">
+			<!-- 관리자 입력 영역 -->
+				<!-- 샘플 기본 padding 영역 -->
+				<div style="padding:40px;">
+					<!-- 샘플 이미지 영역 -->
+					<img src="./temp/temp_company.png" alt="공지사항 이미지" style="margin-bottom:30px;" />
+
+					<!-- 샘플 타이틀 텍스트 영역 -->
+					<div style="text-align:center; line-height:28px; margin-bottom:30px; font-family:kbDM, '맑은 고딕', 'Malgun Gothic', 돋움, dotum, sans-serif; font-size:18px; color:#444;">
+						KB굿잡 전산시스템 업그레이드 작업으로<br />
+						2018년 설 연휴동안 모든 서비스가 중단 됩니다.<br />
+						KB굿잡 고객님의 양해를 부탁 드립니다.
+					</div>
+
+					<!-- 샘플 강조 텍스트 영역 -->
+					<div style="text-align:center; line-height:23px; margin-bottom:30px; font-family:kbDM, '맑은 고딕', 'Malgun Gothic', 돋움, dotum, sans-serif; font-size:16px; color:#189dc3;">
+						· 서비스 중단기간 : 2018년 02월 15일(목) 00시 ~ 02월 18일
+					</div>
+
+					<!-- 샘플 기본 텍스트 영역 -->
+					<div style="text-align:center; line-height:22px; font-family:kbTM, '맑은 고딕', 'Malgun Gothic', 돋움, dotum, sans-serif; font-size:15px; color:#666;">
+						이용에 불편을 드려 대단히 죄송합니다.
+					</div>
+				</div>
+			<!-- //관리자 입력 영역 -->
+			</div>
+
+			<div class="sw_btm">
+				<span class="ck_tp01"><input type="checkbox" id="sw_0101"><label for="sw_0101">일주일간 보지 않기</label></span>
+				<button type="button" class="sw_close"><span class="blind">닫기</span></button>
+			</div>
+		</div>
+	</div>
+</div>
+				</textarea>
+			</div>
+
+
+
+  		</div>
+	</div>
+</div>
+
+<div class='dim_box'></div><!-- 화면 보기용 dim 처리(팝업 오픈시 자동 생성됨) -->
+
+<script>
+function previewBox(texta, ifra){
+  var delay;
+      if(texta != undefined){
+        var editor = CodeMirror.fromTextArea(document.getElementById(texta), {
+          mode: 'text/html',
+          theme: 'dracula'
+        });
+        editor.on("change", function() {
+          clearTimeout(delay);
+          delay = setTimeout(updatePreview, 300);
+        });
+      }
+
+      if(ifra != undefined){
+        function updatePreview() {
+          var previewFrame = document.getElementById(ifra);
+          var preview =  previewFrame.contentDocument ||  previewFrame.contentWindow.document;
+          preview.open();
+          preview.write(editor.getValue());
+          preview.close();
+        }
+      }
+      setTimeout(updatePreview, 300);
+}
+
+
+previewBox('code1', 'preview1')
+previewBox('code2', 'preview2')
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>ㅇㅇ 퍼블리싱 현황판</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/hanatour/uiguide/css/guide.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/hanatour/uiguide/js/ui_guide.js"></script>
+</head>
+<body id="lsds-state-list">
+<div id="page-wrapper" class="lsds-page-wrapper">
+	<!-- header -->
+	<header id="lsds-header">
+		<h1 class="lsds-logo"><a href="/hanatour/uiguide/index.html"><img src="/hanatour/uiguide/images/hanatour_ko.svg" alt="하나투어"></a></h1>
+		<p class="lsds-guide-tit"><a href="/hanatour/uiguide/index.html">퍼블리싱 가이드</a></p>
+	</header>
+	<!-- //header -->
+	<!-- gnb -->
+	<div id="guide_lnb" class="lsds-lnb">
+		<ul  class="guide_lnb ui-lnb"></ul>
+	</div>
+	<!-- //gnb -->
+	<!-- main -->
+	<main id="container" class="lsds-container">
+		<div class="content">
+			<h2 class="lsds-tit02" id="Guide_Content_Title"></h2>
+			<div class="state_board"></div>
+		</div>
+	</main>
+	<!-- //main -->
+</div>
+
+<script src="/hanatour/uiguide/js/jquery.csv.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="/hanatour/uiguide/js/csv_to_html_table.js"></script>
+<script>
+//function initTable(init_table) {
+init_table({
+    csv_path: 'https://ethercalc.org/tiadbvnaen5a.csv',
+    element: 'state_board',
+    //allow_download: false,
+    csv_options: {separator: ',', delimiter: '"'},
+    datatables_options: {
+        "paging": false,
+        "ordering": false,
+        "info": false,
+        "columnDefs": [
+            {
+                "render": function ( data, type, row ) {
+                    return '<a href="'+ row[5] + data +'.html" target="_blank">' + data + '</a>';
+                },
+                "targets": [6]
+            },{
+                "visible": false,
+                "targets": [ 0,5,12 ]
+            }
+        ],
+		"columns": [
+			//{ "width": "20%" },
+			null
+		],
+        "createdRow": function (row, data, index) {
+            $(row).addClass(data[12]);
+        }
+    }
+});
+</script>
+</body>
+</html>

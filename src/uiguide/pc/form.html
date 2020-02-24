@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>KB국민은행 퍼블리싱 마크업 가이드</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../../job/css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="../../job/css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../../job/css/common.css">
+<link rel="stylesheet" type="text/css" href="../../job/css/sub.css">
+<link rel="stylesheet" type="text/css" href="../guide.css">
+<script type="text/javascript" src="../../job/js/jquery-1.12.4.min.js" ></script>
+<script type="text/javascript" src="../../job/js/jquery.bxslider.min.js" ></script>
+<script type="text/javascript" src="../../job/js/jquery-ui.js" ></script>
+<script type="text/javascript" src="../../job/js/common.js" ></script>
+</head>
+<body>
+<div id="page-wrapper" class="lsds-page-wrapper">
+	<div id="lsds-header">
+		<p class="lsds-guide-tit">KB 굿잡 HTML Guide</p>
+	</div>
+
+	<div id="container">
+		<div class="content">
+			<p class="lsds-tit02">1) 폼 타입</p>
+
+			<p class="lsds-tit03">1. Input Box</p>
+			<p class="lsds-tit04">Default</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<span class="inp_tp01 inp_100"><input type="text" placeholder="" title="기본 입력" /></span>
+					</li>
+					<li>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" style="width:100px" /></span>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" style="width:200px" /></span>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" style="width:300px" /></span>
+					</li>
+					<li>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" style="width:100px" disabled="disabled" value="disabled" /></span>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" style="width:200px" disabled="disabled" value="disabled" /></span>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" style="width:300px" disabled="disabled" value="disabled" /></span>
+					</li>
+					<li>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" style="width:100px" readonly="readonly" value="readonly" /></span>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" style="width:200px" readonly="readonly" value="readonly" /></span>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" style="width:300px" readonly="readonly" value="readonly" /></span>
+					</li>
+					<li>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" class="form_error" style="width:100px" /></span>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" class="form_error" style="width:200px" /></span>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" class="form_error" style="width:300px" /></span>
+					</li>
+				</ul>
+			</div>
+
+			<p class="lsds-tit04">Short</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" class="form_st" /></span>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" class="form_st" /></span>
+					</li>
+					<li>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" class="form_st" disabled="disabled" value="disabled" /></span>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" class="form_st" disabled="disabled" value="disabled" /></span>
+					</li>
+					<li>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" class="form_st" readonly="readonly" value="readonly" /></span>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" class="form_st" readonly="readonly" value="readonly" /></span>
+					</li>
+					<li>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" class="form_st form_error" /></span>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" class="form_st form_error" /></span>
+					</li>
+				</ul>
+			</div>
+
+			<p class="lsds-tit04">Long</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" class="form_md" /></span>
+					</li>
+					<li>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" class="form_md" disabled="disabled" value="disabled" /></span>
+					</li>
+					<li>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" class="form_md" readonly="readonly" value="readonly" /></span>
+					</li>
+					<li>
+						<span class="inp_tp01"><input type="text" placeholder="" title="기본 입력" class="form_md form_error" /></span>
+					</li>
+				</ul>
+			</div>
+
+			<p class="lsds-tit04">Date</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<span class="inp_tp01 inp_date"><input type="text" id="datepicker3" placeholder="" title="날짜 조회" /></span>
+					</li>
+					<li>
+						<span class="inp_tp01 inp_date"><input type="text" id="datepicker4" class="form_error" placeholder="" title="날짜 조회" /></span>
+					</li>
+				</ul>
+			</div>
+
+			<p class="lsds-tit03">2. Checkbox</p>
+
+			<p class="lsds-tit04">Default</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<span class="ck_tp01"><input type="checkbox" id="ck_0101" checked="checked" /><label for="ck_0101">체크박스</label></span>
+						<span class="ck_tp01"><input type="checkbox" id="ck_0102" /><label for="ck_0102">체크박스</label></span>
+						<span class="ck_tp01"><input type="checkbox" id="ck_0103" /><label for="ck_0103">체크박스</label></span>
+					</li>
+					<li>
+						<span class="ck_tp01"><input type="checkbox" id="ck_0201" checked="checked" disabled="disabled" /><label for="ck_0201">체크박스</label></span>
+						<span class="ck_tp01"><input type="checkbox" id="ck_0202" disabled="disabled" /><label for="ck_0202">체크박스</label></span>
+						<span class="ck_tp01"><input type="checkbox" id="ck_0203" disabled="disabled" /><label for="ck_0203">체크박스</label></span>
+					</li>
+				</ul>
+			</div>
+
+			<p class="lsds-tit04">Text none</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<span class="ck_tp01 no_txt"><input type="checkbox" id="ck_0301" checked="checked" /><label for="ck_0301"><span>체크박스</span></label></span>
+						<span class="ck_tp01 no_txt"><input type="checkbox" id="ck_0302" /><label for="ck_0302"><span>체크박스</span></label></span>
+					</li>
+					<li>
+						<span class="ck_tp01 no_txt"><input type="checkbox" id="ck_0401" checked="checked" disabled="disabled" /><label for="ck_0401"><span>체크박스</span></label></span>
+						<span class="ck_tp01 no_txt"><input type="checkbox" id="ck_0402" disabled="disabled" /><label for="ck_0402"><span>체크박스</span></label></span>
+					</li>
+				</ul>
+			</div>
+
+			<p class="lsds-tit04">디자인 체크박스</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<span class="ck_tp02"><input type="checkbox" id="ck_we01" checked="checked" /><label for="ck_we01">4대보험</label></span>
+						<span class="ck_tp02"><input type="checkbox" id="ck_we02" /><label for="ck_we02">건강검진</label></span>
+						<span class="ck_tp02"><input type="checkbox" id="ck_we03" /><label for="ck_we03">경조금</label></span>
+						<span class="ck_tp02"><input type="checkbox" id="ck_we04" /><label for="ck_we04">교육비지원</label></span>
+						<span class="ck_tp02"><input type="checkbox" id="ck_we05" /><label for="ck_we05">연차수당</label></span>
+						<span class="ck_tp02"><input type="checkbox" id="ck_we06" /><label for="ck_we06">법정퇴직금</label></span>
+					</li>
+					<li>
+						<span class="ck_tp03"><input type="checkbox" id="ck_sk01" checked="checked"><label for="ck_sk01"><span>스크랩</span></label></span>
+						<span class="ck_tp03"><input type="checkbox" id="ck_sk02"><label for="ck_sk02"><span>스크랩</span></label></span>
+					</li>
+					<li>
+						<span class="ck_tp04"><input type="checkbox" id="ck_sk11" checked="checked"><label for="ck_sk11"><span class="blind">스크랩</span></label></span>
+						<span class="ck_tp04"><input type="checkbox" id="ck_sk12"><label for="ck_sk12"><span class="blind">스크랩</span></label></span>
+					</li>
+					<li>
+						<span class="ck_tp05"><input type="checkbox" id="ck_cp01" checked="checked"><label for="ck_cp01" style="width:95px;"><span>관심기업</span></label></span>
+						<span class="ck_tp05"><input type="checkbox" id="ck_cp02"><label for="ck_cp02" style="width:95px;"><span>관심기업</span></label></span>
+					</li>
+					<li>
+						<span class="ck_tp06"><input type="checkbox" id="ck_cp11" checked="checked"><label for="ck_cp11"><span class="blind">관심기업</span></label></span>
+						<span class="ck_tp06"><input type="checkbox" id="ck_cp12"><label for="ck_cp12"><span class="blind">관심기업</span></label></span>
+					</li>
+					<li>
+						<span class="ico_int on"><span class="blind">관심기업</span></span>
+						<span class="ico_int"><span class="blind">비 관심기업</span></span>
+					</li>
+				</ul>
+			</div>
+
+			<p class="lsds-tit03">3. Radio</p>
+
+			<p class="lsds-tit04">Default</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<span class="rd_tp01"><input type="radio" id="rd_0101" name="rd_01" checked="checked" /><label for="rd_0101">라디오</label></span>
+						<span class="rd_tp01"><input type="radio" id="rd_0102" name="rd_01" /><label for="rd_0102">라디오</label></span>
+						<span class="rd_tp01"><input type="radio" id="rd_0103" name="rd_01" /><label for="rd_0103">라디오</label></span>
+					</li>
+					<li>
+						<span class="rd_tp01"><input type="radio" id="rd_0201" name="rd_02" checked="checked" disabled="disabled" /><label for="rd_0201">라디오</label></span>
+						<span class="rd_tp01"><input type="radio" id="rd_0202" name="rd_02" disabled="disabled" /><label for="rd_0202">라디오</label></span>
+						<span class="rd_tp01"><input type="radio" id="rd_0203" name="rd_02" disabled="disabled" /><label for="rd_0203">라디오</label></span>
+					</li>
+				</ul>
+			</div>
+
+			<p class="lsds-tit04">Text none</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<span class="rd_tp01 no_txt"><input type="radio" id="rd_0301" name="rd_03" checked="checked" /><label for="rd_0301"><span>라디오</span></label></span>
+						<span class="rd_tp01 no_txt"><input type="radio" id="rd_0302" name="rd_03" /><label for="rd_0302"><span>라디오</span></label></span>
+					</li>
+					<li>
+						<span class="rd_tp01 no_txt"><input type="radio" id="rd_0401" name="rd_04" checked="checked" disabled="disabled" /><label for="rd_0401"><span>라디오</span></label></span>
+						<span class="rd_tp01 no_txt"><input type="radio" id="rd_0402" name="rd_04" disabled="disabled" /><label for="rd_0402"><span>라디오</span></label></span>
+					</li>
+				</ul>
+			</div>
+			</div>
+
+			<p class="lsds-tit04">디자인 라디오</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<span class="rd_tp02"><input type="radio" id="rd_d01" name="rd_d" /><label for="rd_d01">유</label></span>
+						<span class="rd_tp02"><input type="radio" id="rd_d02" name="rd_d" checked="checked" /><label for="rd_d02">무</label></span>
+					</li>
+					<li>
+						<span class="rd_tp03"><input type="radio" id="rd_lb01" name="rd_lb" checked="checked" /><label for="rd_lb01">전체</label></span>
+						<span class="rd_tp03"><input type="radio" id="rd_lb02" name="rd_lb" /><label for="rd_lb02">채용중</label></span>
+					</li>
+					<li>
+						<span class="rd_tp05"><input type="radio" id="rd_lbl01" name="rd_lbl" checked="checked" /><label for="rd_lbl01"><span>진로설정/취업<br />전략</span></label></span>
+						<span class="rd_tp05"><input type="radio" id="rd_lbl02" name="rd_lbl" /><label for="rd_lbl02"><span>기업/업무분석</span></label></span>
+					</li>
+					<li>
+						<span class="rd_tp04"><input type="radio" id="rd_i01" name="rd_i" checked="checked" /><label for="rd_i01">기본 [9]</label></span>
+						<span class="rd_tp04"><input type="radio" id="rd_i02" name="rd_i" /><label for="rd_i02">기본 [9]</label></span>
+					</li>
+				</ul>
+			</div>
+
+			<p class="lsds-tit03">4. Select Box</p>
+
+			<p class="lsds-tit04">Default</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<span class="sel_tp01 sel_100">
+							<select title="타이틀">
+								<option>선택</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+					</li>
+					<li>
+						<span class="sel_tp01">
+							<select title="타이틀" style="width:100px;">
+								<option>선택</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+						<span class="sel_tp01">
+							<select title="타이틀" style="width:200px;">
+								<option>선택</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+						<span class="sel_tp01">
+							<select title="타이틀" style="width:300px;">
+								<option>선택하세요</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+					</li>
+					<li>
+						<span class="sel_tp01">
+							<select title="타이틀" style="width:100px;" disabled="disabled">
+								<option>선택</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+						<span class="sel_tp01">
+							<select title="타이틀" style="width:200px;" disabled="disabled">
+								<option>선택</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+						<span class="sel_tp01">
+							<select title="타이틀" style="width:300px;" disabled="disabled">
+								<option>선택하세요</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+					</li>
+					<li>
+						<span class="sel_tp01">
+							<select title="타이틀" class="sel_readonly" style="width:100px;">
+								<option selected="selected">선택</option>
+								<option disabled="disabled">1</option>
+								<option disabled="disabled">2</option>
+								<option disabled="disabled">3</option>
+							</select>
+						</span>
+						<span class="sel_tp01">
+							<select title="타이틀" class="sel_readonly" style="width:200px;">
+								<option selected="selected">선택</option>
+								<option disabled="disabled">1</option>
+								<option disabled="disabled">2</option>
+								<option disabled="disabled">3</option>
+							</select>
+						</span>
+						<span class="sel_tp01">
+							<select title="타이틀" class="sel_readonly" style="width:300px;">
+								<option selected="selected">선택하세요</option>
+								<option disabled="disabled">1</option>
+								<option disabled="disabled">2</option>
+								<option disabled="disabled">3</option>
+							</select>
+						</span>
+					</li>
+					<!-- <li>
+						<span class="sel_tp01">
+							<select title="타이틀" class="form_error" style="width:100px;">
+								<option>선택</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+						<span class="sel_tp01">
+							<select title="타이틀" class="form_error" style="width:200px;">
+								<option>선택</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+						<span class="sel_tp01">
+							<select title="타이틀" class="form_error" style="width:300px;">
+								<option>선택</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+					</li> -->
+				</ul>
+			</div>
+
+			<p class="lsds-tit04">Short</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<span class="sel_tp01">
+							<select title="타이틀" class="form_st">
+								<option>선택</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+						<span class="sel_tp01">
+							<select title="타이틀" class="form_st">
+								<option>선택</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+					</li>
+					<li>
+						<span class="sel_tp01">
+							<select title="타이틀" class="form_st" disabled="disabled">
+								<option>선택</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+						<span class="sel_tp01">
+							<select title="타이틀" class="form_st" disabled="disabled">
+								<option>선택</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+					</li>
+					<li>
+						<span class="sel_tp01">
+							<select title="타이틀" class="form_st sel_readonly">
+								<option selected="selected">선택</option>
+								<option disabled="disabled">1</option>
+								<option disabled="disabled">2</option>
+								<option disabled="disabled">3</option>
+							</select>
+						</span>
+						<span class="sel_tp01">
+							<select title="타이틀" class="form_st sel_readonly">
+								<option selected="selected">선택</option>
+								<option disabled="disabled">1</option>
+								<option disabled="disabled">2</option>
+								<option disabled="disabled">3</option>
+							</select>
+						</span>
+					</li>
+					<!-- <li>
+						<span class="sel_tp01">
+							<select title="타이틀" class="form_st form_error">
+								<option>선택</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+						<span class="sel_tp01">
+							<select title="타이틀" class="form_st form_error">
+								<option>선택</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+					</li> -->
+				</ul>
+			</div>
+
+			<p class="lsds-tit04">Long</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<span class="sel_tp01">
+							<select title="타이틀" class="form_md">
+								<option>선택하세요</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+					</li>
+					<li>
+						<span class="sel_tp01">
+							<select title="타이틀" class="form_md" disabled="disabled">
+								<option>선택하세요</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+					</li>
+					<li>
+						<span class="sel_tp01">
+							<select title="타이틀" class="form_md sel_readonly">
+								<option selected="selected">선택하세요</option>
+								<option disabled="disabled">1</option>
+								<option disabled="disabled">2</option>
+								<option disabled="disabled">3</option>
+							</select>
+						</span>
+					</li>
+					<!-- <li>
+						<span class="sel_tp01">
+							<select title="타이틀" class="form_md form_error">
+								<option>선택</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+						</span>
+					</li> -->
+				</ul>
+			</div>
+
+			<p class="lsds-tit04">디자인 select</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<div class="sel_img">
+							<div class="sel_tit">
+								<button type="button" class="sel_btn sel_open">
+									<span class="sel_txt">
+										<span class="star_score star5"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="blind">별점 5점</span></span>
+										최고에요!
+										<span class="blind">현재 선택 별점, 클릭해 별점 선택 영역을 열거나 닫고 변경 선택 가능, 현재상태 닫힘</span>
+									</span>
+								</button>
+							</div>
+							<div class="sel_box">
+								<button type="button" class="sel_btn">
+									<span class="sel_txt">
+										<span class="star_score star5"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="blind">별점 5점</span></span>
+										최고에요!
+									</span>
+								</button>
+								<button type="button" class="sel_btn">
+									<span class="sel_txt">
+										<span class="star_score star4"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="blind">별점 4점</span></span>
+										만족해요!
+									</span>
+								</button>
+								<button type="button" class="sel_btn">
+									<span class="sel_txt">
+										<span class="star_score star3"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="blind">별점 3점</span></span>
+										좋아요!
+									</span>
+								</button>
+								<button type="button" class="sel_btn">
+									<span class="sel_txt">
+										<span class="star_score star2"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="blind">별점 2점</span></span>
+										아쉬워요!
+									</span>
+								</button>
+								<button type="button" class="sel_btn">
+									<span class="sel_txt">
+										<span class="star_score star1"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="blind">별점 1점</span></span>
+										불만족
+									</span>
+								</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<p class="lsds-tit03">5. Textarea</p>
+
+			<p class="lsds-tit04">Default</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<textarea cols="0" rows="0" placeholder="내용을 입력해 주세요." title="Default 내용입력"></textarea>
+						<div class="t_area">
+							<strong class="col_blue">0</strong> / 1000byte (한글 500자)
+						</div>
+					</li>
+					<li>
+						<textarea cols="0" rows="0" placeholder="내용을 입력해 주세요." style="height:190px;" title="Default 내용입력"></textarea>
+						<div class="t_area">
+							<strong class="col_blue">0</strong> / 1000byte (한글 500자)
+						</div>
+					</li>
+					<li>
+						<textarea cols="0" rows="0" placeholder="내용을 입력해 주세요." style="height:190px;" disabled="disabled" title="Default 내용입력"></textarea>
+						<div class="t_area">
+							<strong class="col_blue">0</strong> / 1000byte (한글 500자)
+						</div>
+					</li>
+					<li>
+						<textarea cols="0" rows="0" placeholder="내용을 입력해 주세요." style="height:190px;" readonly="readonly" title="Default 내용입력">테스트 테스트 테스트 테스트 테스트 테스트</textarea>
+						<div class="t_area">
+							<strong class="col_blue">0</strong> / 1000byte (한글 500자)
+						</div>
+					</li>
+					<li>
+						<textarea cols="0" rows="0" placeholder="내용을 입력해 주세요." style="height:190px;" class="form_error" title="Default 내용입력"></textarea>
+						<div class="t_area">
+							<strong class="col_blue">0</strong> / 1000byte (한글 500자)
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<p class="lsds-tit03">6. Form Type 예시</p>
+
+			<p class="lsds-tit04">inputbox 안내문구</p>
+			<div class="box_type">
+				<div class="form_line">
+					<span class="inp_tp01">
+						<input type="text" placeholder="" title="기본 입력" class="form_md" />
+						<span class="info_tp01 ico_point">안내문구입니다.</span>
+					</span>
+					<span class="inp_tp01">
+						<input type="text" placeholder="" title="기본 입력" class="form_md" />
+					</span>
+					<span class="info_tp02">(25자 이내)</span>
+				</div>
+			</div>
+
+			<p class="lsds-tit04">inputbox error 문구</p>
+			<div class="box_type">
+				<div class="form_line">
+					<span class="inp_tp01">
+						<input type="text" placeholder="" title="기본 입력" class="form_md form_error" />
+						<span class="error_tp01">파일형식을 확인해주세요.</span>
+					</span>
+					<span class="inp_tp01">
+						<input type="text" placeholder="" title="기본 입력" class="form_md" />
+					</span>
+					<span class="info_tp02">(25자 이내)</span>
+				</div>
+			</div>
+
+			<p class="lsds-tit04">휴대폰 & 전화번호</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<div class="form_line">
+							<div class="form_box">
+								<span class="sel_tp01">
+									<select title="휴대폰 앞자리" class="form_st">
+										<option>선택</option>
+										<option>010</option>
+									</select>
+								</span>
+								<span class="hyphen">-</span>
+								<span class="inp_tp01"><input type="text" placeholder="" title="휴대폰 중간자리" class="form_st" /></span>
+								<span class="hyphen">-</span>
+								<span class="inp_tp01"><input type="text" placeholder="" title="휴대폰 끝자리" class="form_st" /></span>
+							</div>
+							<span class="ck_tp01"><input type="checkbox" id="ck_p01" checked="checked" /><label for="ck_p01">비공개</label></span>
+						</div>
+					</li>
+					<li>
+						<div class="form_line">
+							<div class="form_box">
+								<span class="sel_tp01">
+									<select title="전화번호 앞자리" class="form_st">
+										<option>선택</option>
+										<option>02</option>
+									</select>
+								</span>
+								<span class="hyphen">-</span>
+								<span class="inp_tp01"><input type="text" placeholder="" title="전화번호 중간자리" class="form_st" /></span>
+								<span class="hyphen">-</span>
+								<span class="inp_tp01"><input type="text" placeholder="" title="전화번호 뒷자리" class="form_st" /></span>
+							</div>
+							<span class="ck_tp01"><input type="checkbox" id="ck_p02" checked="checked" /><label for="ck_p02">비공개</label></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<p class="lsds-tit04">이메일</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<div class="form_line">
+							<div class="form_box">
+								<span class="inp_tp01"><input type="text" placeholder="" title="이메일 주소" class="form_st" /></span>
+								<span class="at_mark">@</span>
+								<span class="inp_tp01"><input type="text" placeholder="" title="이메일 도메인" class="form_st" /></span>
+							</div>
+							<span class="sel_tp01">
+								<select title="이메일 도메인 선택" class="form_md">
+									<option>선택하세요</option>
+								</select>
+							</span>
+							<span class="ck_tp01"><input type="checkbox" id="ck_em01" /><label for="ck_em01">비공개</label></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<p class="lsds-tit04">주소</p>
+			<div class="box_type">
+				<!-- <dl class="dl_tp01 form_line">
+					<dt>우편번호</dt>
+					<dd>
+						<span class="inp_tp01"><input type="text" placeholder="" title="우편번호" class="form_st" readonly="readonly" value="readonly" /></span>
+						<button type="button" class="btn_tp03 gray02"><span>주소 검색</span></button>
+						<span class="ck_tp01"><input type="checkbox" id="ck_a01" checked="checked" /><label for="ck_a01">기업회원주소지와 동일</label></span>
+					</dd>
+				</dl>
+				<dl class="dl_tp01 form_line">
+					<dt>도로명</dt>
+					<dd>
+						<span class="inp_tp01"><input type="text" placeholder="" title="도로명 주소" class="form_md" readonly="readonly" value="readonly" /></span>
+						<span class="inp_tp01"><input type="text" placeholder="" title="도로명 주소 자세히" class="form_md" readonly="readonly" value="readonly" /></span>
+					</dd>
+				</dl>
+				<dl class="dl_tp01 form_line">
+					<dt>지번</dt>
+					<dd>
+						<span class="inp_tp01"><input type="text" placeholder="" title="지번 주소" class="form_md" readonly="readonly" value="readonly" /></span>
+						<span class="inp_tp01"><input type="text" placeholder="" title="지번 주소 자세히" class="form_md" readonly="readonly" value="readonly" /></span>
+					</dd>
+				</dl> -->
+				<div class="form_line">
+					<span class="inp_tp01"><input type="text" placeholder="" title="우편번호" class="form_st" readonly="readonly" value="readonly" /></span>
+					<button type="button" class="btn_tp03 gray02"><span>주소 검색</span></button>
+					<span class="ck_tp01"><input type="checkbox" id="ck_a01" checked="checked" /><label for="ck_a01">비공개</label></span>
+				</div>
+				<div class="form_line">
+					<span class="inp_tp01"><input type="text" placeholder="" title="도로명 주소 및 상세주소" style="width:500px;" readonly="readonly" value="readonly" /></span>
+				</div>
+			</div>
+
+			<p class="lsds-tit04">기간</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<div class="form_line">
+							<div class="form_box">
+								<span class="inp_tp01 inp_date"><input type="text" id="datepicker1" placeholder="" title="조회 시작 일자" /></span>
+								<span class="hyphen">-</span>
+								<span class="inp_tp01 inp_date"><input type="text" id="datepicker2" placeholder="" title="조회 종료 일자" /></span>
+							</div>
+							<button type="button" class="btn_tp03 gray02"><span>검색</span></button>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<p class="lsds-tit04">URL</p>
+			<div class="box_type">
+				<ul class="guide_list02">
+					<li>
+						<div class="form_line">
+							<span class="inp_tp01"><input type="text" placeholder="" title="URL" class="form_lg" value="http://" /></span>
+							<span class="ck_tp01"><input type="checkbox" id="ck_u01" checked="checked" /><label for="ck_u01">비공개</label></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</div>
+</body>
+<script>
+$("#datepicker1, #datepicker2, #datepicker3, #datepicker4").datepicker({
+	deteFormat:'yy/mm/dd',
+	showMonthAfterYear: true,
+	yearSuffix: ".",
+	monthNames: [ "1","2","3","4","5","6","7","8","9","10","11","12" ],
+	dayNamesMin: [ "일", "월", "화", "수", "목", "금", "토"]
+});
+</script>
+</html>

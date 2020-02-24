@@ -1,0 +1,60 @@
+{
+	"menu": [
+	  {
+		"title": "공통",
+		"link": "/hanatour/uiguide/information.html",
+		"sub": [
+		  {
+			"title": "information",
+			"link": "/hanatour/uiguide/information.html"
+		  },
+		  {
+			"title": "convention",
+			"link": "/hanatour/uiguide/convention.html"
+		  }
+		]
+	  },
+	  {
+		"title": "desktop",
+		"link": "/hanatour/uiguide/pc/information.html",
+		"sub": [
+		  {
+			"title": "information",
+			"link": "/hanatour/uiguide/pc/information.html"
+		  },
+		  {
+			"title": "button",
+			"link": "/hanatour/uiguide/pc/button.html"
+		  }
+		]
+	  },
+	  {
+		"title": "mobile",
+		"link": "/hanatour/uiguide/mobile/information.html",
+		"sub": [
+		  {
+			"title": "information",
+			"link": "/hanatour/uiguide/mobile/information.html"
+		  },
+		  {
+			"title": "button",
+			"link": "/hanatour/uiguide/mobile/button.html"
+		  }
+		]
+	  },
+	  {
+		"title": "현황판",
+		"link": "/hanatour/uiguide/status_list/pc.html",
+		"sub": [
+		  {
+			"title": "PC",
+			"link": "/hanatour/uiguide/status_list/pc.html"
+		  },
+		  {
+			"title": "Mobile",
+			"link": "/hanatour/uiguide/status_list/mobile.html"
+		  }
+		]
+	  }
+	]
+  }

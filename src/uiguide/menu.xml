@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GuideMenu>
+	<title>메뉴별 현황판</title>
+	<Depth1>
+		<title>공통</title>
+		<menulink>/hanatour/uiguide/information.html?depth1=1&amp;depth2=1</menulink>
+		<menuid>1</menuid>
+		<Depth2>
+			<title>information</title>
+			<menulink>/hanatour/uiguide/information.html?depth1=1&amp;depth2=1</menulink>
+			<menuid>1</menuid>
+		</Depth2>
+		<Depth2>
+			<title>convention</title>
+			<menulink>/hanatour/uiguide/convention.html?depth1=1&amp;depth2=2</menulink>
+			<menuid>2</menuid>
+		</Depth2>
+	</Depth1>
+	<Depth1>
+		<title>Desktop</title>
+		<menulink>/hanatour/uiguide/pc/information.html?depth1=2&amp;depth2=1</menulink>
+		<menuid>2</menuid>
+		<Depth2>
+			<title>information</title>
+			<menulink>/hanatour/uiguide/pc/information.html?depth1=2&amp;depth2=1</menulink>
+			<menuid>1</menuid>
+		</Depth2>
+		<!-- <Depth2>
+			<title>input</title>
+			<menulink>/hanatour/uiguide/pc/board_2.html?depth1=2&amp;depth2=3</menulink>
+			<menuid>3</menuid>
+		</Depth2>
+		<Depth2>
+			<title>popup</title>
+			<menulink>/hanatour/uiguide/pc/popup.html?depth1=2&amp;depth2=5</menulink>
+			<menuid>5</menuid>
+		</Depth2> -->
+		<Depth2>
+			<title>button</title>
+			<menulink>/hanatour/uiguide/pc/button.html?depth1=2&amp;depth2=2</menulink>
+			<menuid>2</menuid>
+		</Depth2>
+	</Depth1>
+	<Depth1>
+		<title>Mobile</title>
+		<menulink>/hanatour/uiguide/mobile/information.html?depth1=3&amp;depth2=1</menulink>
+		<menuid>3</menuid>
+		<Depth2>
+			<title>information</title>
+			<menulink>/hanatour/uiguide/mobile/information.html?depth1=3&amp;depth2=1</menulink>
+			<menuid>1</menuid>
+		</Depth2>
+		<Depth2>
+			<title>button</title>
+			<menulink>/hanatour/uiguide/mobile/board_2.html?depth1=3&amp;depth2=2</menulink>
+			<menuid>2</menuid>
+		</Depth2>
+		<Depth2>
+			<title>input</title>
+			<menulink>/hanatour/uiguide/mobile/title.html?depth1=3&amp;depth2=3</menulink>
+			<menuid>3</menuid>
+		</Depth2>
+
+	</Depth1>
+	<Depth1>
+		<title>현황판</title>
+		<menulink>/hanatour/uiguide/status_list/pc.html?depth1=4&amp;depth2=1</menulink>
+		<menuid>4</menuid>
+		<Depth2>
+			<title>PC</title>
+			<menulink>/hanatour/uiguide/status_list/pc.html?depth1=4&amp;depth2=1</menulink>
+			<menuid>1</menuid>
+		</Depth2>
+		<Depth2>
+			<title>Mobile</title>
+			<menulink>/hanatour/uiguide/status_list/mobile.html?depth1=4&amp;depth2=2</menulink>
+			<menuid>2</menuid>
+		</Depth2>
+	</Depth1>
+</GuideMenu>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>하나투어 퍼블리싱 마크업 가이드</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../../job/css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="../../job/css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../../job/css/common.css">
+<link rel="stylesheet" type="text/css" href="../../job/css/sub.css">
+<link rel="stylesheet" type="text/css" href="../guide.css">
+<script type="text/javascript" src="../jquery-1.12.4.min.js" ></script>
+<script type="text/javascript" src="../../job/js/jquery.bxslider.min.js" ></script>
+<script type="text/javascript" src="../../job/js/jquery-ui.js" ></script>
+<script type="text/javascript" src="../../job/js/common.js" ></script>
+<script src="/hanatour/uiguide/xmlscript.js" ></script>
+</head>
+<body>
+<div id="page-wrapper" class="lsds-page-wrapper">
+	<header id="lsds-header">
+		<h1 class="lsds-logo"><a href="/hanatour/uiguide/index.html"><img src="/hanatour/uiguide/images/hanatour_ko.svg" alt="하나투어"></a></h1>
+		<p class="lsds-guide-tit"><a href="/hanatour/uiguide/index.html">퍼블리싱 가이드</a></p>
+	</header>
+	<div id="guide_lnb" class="lsds-lnb">
+		<div id="Guide_TopWrap_Menu" class="guide_lnb">
+
+		</div>
+	</div>
+	<script>sendRequest("/hanatour/uiguide/menu.xml");</script>
+
+	<main id="container" class="lsds-container">
+		<div class="content">
+			<h2 class="lsds-tit02">제목/ 내용</h2>
+
+			<p class="lsds-tit03">1. Title</p>
+			<ul class="box_type guide_list02">
+				<li>
+					<h2 class="tit_h2">tit_h2 본문 전체 타이틀</h2>
+				</li>
+				<li>
+					<h3 class="tit_h4">tit_h3 콘텐츠 단락별 서브 타이틀</h3>
+				</li>
+				<li>
+					<h4 class="tit_h5">tit_h5 콘텐츠 단락 내 항목 타이틀 or 테이블 타이틀</h4>
+				</li>
+			</ul>
+
+			<p class="lsds-tit03">2. 텍스트 기준</p>
+			<ul class="box_type guide_list02">
+				<li>
+					<p>Contents - 재밌고 알차고 의미있는 시간이었습니다.</p>
+				</li>
+				<li>
+					<p>Highlight - <strong class="col_orange">이력서 관리 &gt; 내 이력서 관리</strong> 에서 확인하세요.</p>
+				</li>
+				<li>
+					<p>Highlight_2 - 총 경력 <strong class="col_blue">13</strong>년 <strong class="col_blue">4</strong>개월입니다.</p>
+				</li>
+			</ul>
+		</div>
+	</main>
+</div>
+</body>
+</html>

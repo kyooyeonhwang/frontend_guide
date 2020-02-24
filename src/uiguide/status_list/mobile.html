@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>ㅇㅇ 퍼블리싱 현황판</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/hanatour/uiguide/css/guide.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="/hanatour/uiguide/js/ui_guide.js"></script>
+<script src="/hanatour/uiguide/js/xmlscript.js"></script>
+</head>
+<body id="lsds-state-list">
+<div id="page-wrapper" class="lsds-page-wrapper">
+	<!-- header -->
+	<header id="lsds-header">
+		<h1 class="lsds-logo"><a href="/hanatour/uiguide/index.html"><img src="/hanatour/uiguide/images/hanatour_ko.svg" alt="하나투어"></a></h1>
+		<p class="lsds-guide-tit"><a href="/hanatour/uiguide/index.html">퍼블리싱 가이드</a></p>
+	</header>
+	<!-- //header -->
+	<!-- gnb -->
+	<div id="guide_lnb" class="lsds-lnb">
+		<ul  class="guide_lnb ui-lnb"></ul>
+	</div>
+	<!-- //gnb -->
+	<!-- main -->
+	<main id="container" class="lsds-container">
+        <div class="content">
+			<h2 class="lsds-tit02" id="Guide_Content_Title"></h2>
+            <button type="button" class="mobile_emulator_display" id="ui_mobile_emulator">모바일 에뮬레이터</button>
+			<div class="state_board">
+				<table class="datatable"></table>
+				<div class="mobile_emulator">
+					<div class="mobile_emulator_inner">
+						<iframe src="" frameborder="0" scrolling="yes" name="myiframe" id="myiframe"></iframe>
+					</div>
+				</div>
+			</div>
+        </div>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.0.0/dist/sheetrock.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lrsjng.jquery-qrcode/0.14.0/jquery-qrcode.min.js"></script>
+<script>
+// Define spreadsheet URL.
+var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/13bHbrh4cjnChodL8T3otMhFrRDYUNgduoywxr3EopRc/edit#gid=0';
+
+// Load top five HR leaders.
+$('.datatable').sheetrock({
+	url: mySpreadsheet,
+	callback : makeSortable
+});
+
+function makeSortable(error, options, response) {
+	// Target is not a jQuery object, so we need to call jQuery
+	// explicitly.
+	$(options.user.target).DataTable({
+		"paging": false,
+		"ordering": false,
+		"info": false,
+		"autoWidth": false,
+		"columnDefs": [
+			{
+				"render": function (data, type, row) {
+					return '<a href="'+ row[4] + data +'.html" target="_blank" class="screen_link">' + data + '</a>';
+				},
+				"targets": [5]
+			},{
+				"render": function (data, type, row) {
+					return '<a href="'+ row[4] + row[5] +'.html" target="myiframe">Mobile</a>';
+				},
+				"targets": [6]
+			},{
+				"visible": false,
+				"targets": [4,9,11,12]
+			}
+		],
+		"columns": [
+			{className: "depth1"},
+			{className: "depth2"},
+			{className: "depth3"},
+			{className: "depth4"},
+			null,
+			{className: "screen_id"},
+			{className: "emulator"},
+			{className: "planner"},
+			{className: "date"},
+			{className: "comment"},
+			{className: "author"},
+			null,
+			null
+		],
+		"createdRow": function (row, data, index) {
+			$(row).addClass(data[11]);
+			$(row).addClass(data[12]);
+		}
+	});
+}
+
+
+$('body table').on('mouseover', 'a.screen_link', function() {
+	$(this).addClass('active');
+	$(this).qrcode({
+		render: 'canvas',
+		size: 110,
+		text: this.href
+	});
+});
+
+$('body table').on('mouseleave', 'a', function() {
+	$(this).removeClass('active');
+	$(this).children('canvas').remove();
+});
+
+$(".screen_iframe").click(function(e) {
+	e.preventDefault();
+	$("#myiframe").attr("src", $(this).attr("href"));
+})
+
+$("#ui_mobile_emulator").click(function(e){
+	$("body").toggleClass("mobile_emulator_on");
+})
+</script>
+</body>
+</html>

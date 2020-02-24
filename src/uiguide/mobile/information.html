@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>ㅇㅇ 퍼블리싱 마크업 가이드</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/hanatour/uiguide/css/guide.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/hanatour/uiguide/js/ui_guide.js"></script>
+<link rel="stylesheet" href="/hanatour/uiguide/css/codemirror.css">
+<link rel="stylesheet" href="https://codemirror.net/theme/dracula.css">
+<script src=/hanatour/uiguide/js/codemirror.js></script>
+<script src=/hanatour/uiguide/js/xml.js></script>
+<script src=/hanatour/uiguide/js/javascript.js></script>
+<script src=/hanatour/uiguide/js/css.js></script>
+<script src=/hanatour/uiguide/js/htmlmixed.js></script>
+</head>
+<body id="lsds-uiguide">
+<div id="page-wrapper" class="lsds-page-wrapper">
+	<!-- header -->
+	<header id="lsds-header">
+		<h1 class="lsds-logo"><a href="/hanatour/uiguide/index.html"><img src="/hanatour/uiguide/images/hanatour_ko.svg" alt="하나투어"></a></h1>
+		<p class="lsds-guide-tit"><a href="/hanatour/uiguide/index.html">퍼블리싱 가이드</a></p>
+	</header>
+	<!-- //header -->
+	<!-- gnb -->
+	<div id="guide_lnb" class="lsds-lnb">
+		<ul  class="guide_lnb ui-lnb"></ul>
+	</div>
+	<!-- //gnb -->
+	<!-- chapter -->
+	<div class="lsds-table-contents ui-table-contents">
+		<h2 class="title">Table of contents</h2>
+		<ul class="lsds-toc-list ui-toc-list"></ul>
+	</div>
+	<!-- //chapter -->
+	<!-- main -->
+	<main id="container" class="lsds-container">
+		<div class="content">
+			<h2 class="lsds-tit02" id="Guide_Content_Title"></h2>
+			<section class="lsds-code-block">
+				<h3 class="lsds-tit02">Head</h3>
+    <div class="lsds-code-info"><button class="lsds-btn-codecopy ui-btn-codecopy" data-text-swap="Copy!">Copy to clipboard</button></div>
+    <textarea class="lsds-code-content ui-html ui-code-content">
+<meta charset="utf-8"> <!-- 필수 사항 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>@콘텐츠 제목 &gt; @하위섹션명 : @서비스명</title>
+<link rel="stylesheet" type="text/css" href="">
+<script type="text/javascript" src=""></script></textarea>
+			</section>
+
+			<section class="lsds-code-block">
+				<h3 class="lsds-tit02">Layout</h3>
+				<div class="lsds-code-info"><button class="lsds-btn-codecopy ui-btn-codecopy" data-text-swap="Copy!">Copy to clipboard</button></div>
+				<textarea class="lsds-code-content ui-html ui-code-content">
+<!-- skip -->
+<div id="skip-navigation">
+	<a href="#">본문 바로가기</a>
+	<a href="#">메뉴 바로가기</a>
+</div>
+<!-- //skip -->
+<div id="page-wrapper">
+	<!-- header -->
+	<header id="lsds-header">헤더 영역</header>
+	<!-- //header -->
+	<!-- container -->
+	<div id="container">
+		<!-- content -->
+		<main id="content">콘텐츠 영역</main>
+		<!-- //content -->
+	</div>
+	<!-- //container -->
+	<!-- footer -->
+	<footer id="footer">푸터 영역</footer>
+	<!-- //footer -->
+</div></textarea>
+			</section>
+		</div>
+	</main>
+	<!-- //main -->
+</div>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>ㅇㅇ 퍼블리싱 마크업 가이드</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/hanatour/uiguide/css/guide.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/hanatour/uiguide/js/ui_guide.js"></script>
+</head>
+<body id="lsds-uiguide">
+<div id="page-wrapper" class="lsds-page-wrapper">
+	<!-- header -->
+	<header id="lsds-header">
+		<h1 class="lsds-logo"><a href="/hanatour/uiguide/index.html"><img src="/hanatour/uiguide/images/hanatour_ko.svg" alt="하나투어"></a></h1>
+		<p class="lsds-guide-tit"><a href="/hanatour/uiguide/index.html">퍼블리싱 가이드</a></p>
+	</header>
+	<!-- //header -->
+	<!-- gnb -->
+	<div id="guide_lnb" class="lsds-lnb">
+		<ul  class="guide_lnb ui-lnb"></ul>
+	</div>
+	<!-- //gnb -->
+	<!-- chapter -->
+	<div class="lsds-table-contents ui-table-contents">
+		<h2 class="title">Table of contents</h2>
+		<ul class="lsds-toc-list ui-toc-list"></ul>
+	</div>
+	<!-- //chapter -->
+	<!-- main -->
+	<main id="container" class="lsds-container">
+		<div class="content">
+			<h2 class="lsds-tit02" id="Guide_Content_Title"></h2>
+			<section class="lsds-code-block">
+				<h3 class="lsds-tit03">HTML 규칙</h3>
+				<section>
+					<h4 class="lsds-tit04">기본 규칙</h4>
+					<section>
+						<h5 class="lsds-tit05">표준 엘리먼트 사용</h5>
+						<div class="box_type">
+							<p>비표준 엘리먼트(<code class="code_highlight">font,center,strike,u,s,applet,besefont,dir,isindex,xmp</code>)를 사용하지 않는다.</p>
+							<ul class="lsds-ulist-group">
+								<li>모든 요소는 완벽하게 중첩되어야 한다.</li>
+								<li>모든 속성값은 속성이 함께 선언되어야 한다.</li>
+								<li>모든 요소와 속성은 소문자여야 한다.</li>
+								<li>모든 속성값은 인용 부호("")안에 표기한다.</li>
+								<li>모든 요소는 닫아야 한다.</li>
+								<li>text나 URL,script에 포함된 특수 문자는 escape 시킨다</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+				<section>
+					<h4 class="lsds-tit04">각 요소별 상세규칙</h4>
+					<section>
+						<h5 class="lsds-tit05">서비스명</h5>
+						<div class="box_type">
+							<ul class="lsds-ulist-group">
+								<li>모든 서비스는 문서 제목에 서비스명을 표기하는 것을 원칙으로 한다.</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h5 class="lsds-tit05">콘텐츠 제목</h5>
+						<div class="box_type">
+							<ul class="lsds-ulist-group">
+								<li>하나의 콘텐츠를 대표하는 페이지의 경우, 반드시 해당 콘텐츠 제목을 문서 제목에 표기한다.</li>
+								<li>콘텐츠 제목은 문서 제목에서 가장 앞부분에 위치한다.</li>
+								<li>콘텐츠 제목과 서비스명 간의 구분자는 반드시 '-'(&ndash;) 기호를 사용한다.</li>
+								<li>콘텐츠 제목이 HTML Validation을 깨지 않도록 반드시 HTML escape 되어야 한다.</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+				<section>
+					<h4 class="lsds-tit04">주석표기</h4>
+					<section>
+						<h5 class="lsds-tit05">수정작업 시 주석처리</h5>
+						<div class="box_type">
+							<ul class="lsds-ulist-group">
+								<li>마크업 수정 시, 수정 부분을 표기하는 주석은 날짜를 기입하여 사용한다.<br>
+								(에디트플러스에서 Ctrl+D)를 누르면 0000-00-00 형식으로 자동 입력됨) <br>
+								너무 많은 주석은 유령문자버그를 생성하므로 되도록 자제한다.</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+				<section>
+					<h4 class="lsds-tit04">들여쓰기</h4>
+					<section>
+						<h5 class="lsds-tit05">기본규칙</h5>
+						<div class="box_type">
+							<ul class="lsds-ulist-group">
+								<li>코드의 가독성을 높이기 위하여 들여쓰기를 사용하며 탭 1개의 크기는 공백 4칸으로 설정한다.<br>
+								또한 마크업의 깊이가 깊어질 때마다 탭 1개만큼 들여쓰지만 다음의 경우 들여쓰지 않을 수 있다.
+									<ul>
+										<li>HTML Element의 자식 Element인 head,body / thead,tdody Element의 자식 Element인 tr</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+				<section>
+					<h4 class="lsds-tit04">Attribute 우선순위</h4>
+					<section>
+						<h5 class="lsds-tit05">Attribute 작성</h5>
+						<div class="box_type">
+							<p>Attribute 값은 큰따옴표(" ")로 묶는다.</p>
+
+						</div>
+					</section>
+				</section>
+				<section>
+					<h4 class="lsds-tit04">Table</h4>
+					<div class="box_type">
+						<dl>
+							<dt>caption</dt>
+							<dd>caption은 마크업흐름상 table의 최상위에 위치 해야하며, 복합적인 테이블의 경우 내용을 상세히 기입하여야 합니다..</dd>
+							<dt>scope</dt>
+							<dd>해당 TH 항목의 읽어야 하는 방향을 지정, scope="col"(세로) row는 가로(row)</dd>
+							<dt>thead,tdody,tfoot<dt>
+							<dd>thead만 있으면 벨리데이터 오류, tfoot과 같은 경우 테이블의 가장 아래에 위치하며,마크업의 흐름상 thead 다음 tfoot 다음 tdody순으로 코딩해야 합니다.</dd>
+							<dt>colgroup</dt>
+							<dd>
+								<ul>
+									<li>세로열 전체를 그룹화 합니다. 예) style="width:50px" 스타일 또는 class="width_n1" 등의 클래스로 제어한다.</li>
+								</ul>
+							<dd>
+						</dl>
+					</div>
+				</section>
+			</section>
+			<section class="lsds-code-block">
+				<h3 class="lsds-tit02">CSS 규칙</h3>
+				<div class="box_type">
+					<ul class="lsds-ulist-group">
+						<li>클래스 네이밍은 기본 '_'(언더바) 사용, ID는 카멜 케이스 형식으로 작성한다. 예) getInputReader</li>
+						<li>CSS 스타일 속성간 개행하지 않고 작성하며, 클래스명 선언 및 세부 속성간에는 공백을 주지 않는다. CSS 선언의 마지막 속성의 세미콜론은 생략한다. 띄어쓰기는 1라인 까지만 허용한다.</li>
+						<li>CSS 선택자는 class로 핸들링되며, 태그네임으로 핸들링하지 않는다. (단, 사용빈도가 높은 li,td,th는 예외) 또한, 태그네임과 class는 중복사용하지 않는다.</li>
+						<li>크로스브라우징을 위한 필터적용(핵)은 최소한으로 한다.</li>
+						<li>단위 사용은 다양한 환경의 크로스플랫폼을 위해 절대단위(px)를 권장하며, 유동적인 레이아웃 구현 시 상대단위(em,%)를 사용한다.</li>
+						<li>속성선언에 따옴표는 사용하지 않는다.(단, 한글폰트 선언이나, 공백표현처럼 사용이 필요한 경우는 예외되며, 사용 시에는 홑따옴표 통일한다.)</li>
+						<li>속성선언순서 : <code class="code_highlight">display, overflow, float, position, z-index, width&amp;height, margin&amp;padding, border, font, background, etc(color,text-decoration,text-indent,clear....)</code></li>
+						<li>font 속성 순서 : 축약형을 사용하지 않으며, 스타일 선언시 font-style &gt; font-variant &gt; font-weight &gt; font-size &gt; line-height &gt; font-family</li>
+					</ul>
+				</div>
+			</section>
+			<section class="lsds-code-block">
+				<h3 class="lsds-tit02">이미지 네이밍</h3>
+				<div class="box_type">
+					<table class="table_type">
+						<caption>이미지 약속어 표의 약속어,분류 정보 제공</caption>
+						<thead>
+							<tr>
+								<th scope="col" colspan="2">약속어</th>
+								<th scope="col" rowspan="2" class="vm">설명</th>
+							</tr>
+							<tr>
+								<th class="hline">형태</th>
+								<th class="hline">형태+의미+상태</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="vm">
+									tit*_*
+								</td>
+								<td>
+									tit_* <br>
+									tit01_*<br>
+									tit02_*<br>
+									tit03_*<br>
+									tit04_*<br>
+									tit05_*
+								</td>
+								<td>제불특정레벨<br>
+									제목1<br>
+									제목2<br>
+									제목3<br>
+									제목4<br>
+									제목5
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">gnb_*, lnb_*, snb_*</td>
+								<td>내비게이션</td>
+							</tr>
+							<tr>
+								<td colspan="2">tab_</td>
+								<td>탭</td>
+							</tr>
+							<tr>
+								<td colspan="2">btn_</td>
+								<td>버튼</td>
+							</tr>
+							<tr>
+								<td colspan="2">bul_</td>
+								<td>블릿</td>
+							</tr>
+							<tr>
+								<td colspan="2">ico_</td>
+								<td>아이콘</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+		</div>
+	</main>
+	<!-- //main -->
+</div>
+</body>
+</html>
